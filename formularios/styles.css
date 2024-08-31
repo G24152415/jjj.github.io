@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #c7a17a;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.heading-1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.container-hero {
+    background-color: var(--background-color);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.customer-support {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.customer-support i {
+    font-size: 3.3rem;
+}
+
+.content-customer-support {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-logo i {
+    font-size: 3rem;
+}
+
+.container-logo h1 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.container-user {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.container-user .fa-user {
+    font-size: 3rem;
+    color: var(--primary-color);
+    padding-right: 2.5rem;
+    border-right: 1px solid #e2e2e2;
+}
+
+.container-navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .fa-bars {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    background-color: #fff;
+    height: 4.4rem;
+    overflow: hidden;
+}
+
+.search-form input {
+    outline: none;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.search-form .btn-search {
+    border: none;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.btn-search i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.banner {
+    background-image: linear-gradient(100deg, #000000, #00000020), url('imagen/high-angle-kid-cheerfully-dressed-as-pilot-standing.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-banner {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.content-banner p {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.content-banner h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.content-banner a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+.blogs {
+    padding: 5rem 40%;
+    background-color: var(--background-color);
+}
+
+.container-blogs {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+
+.card-blog {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.container-img img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.content-blog {
+    padding: 2rem;
+}
+
+.content-blog h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.content-blog span {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+.content-blog p {
+    margin: 1rem 0;
+    color: #777;
+}
+
+.btn-read-more {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.social-icons span {
+    margin-right: 1rem;
+}
+
+.newsletter {
+    padding: 2rem;
+    background-color: #fff;
+    color: var(--dark-color);
+    border-radius: 0.5rem;
+}
+
+.newsletter p {
+    margin-bottom: 1rem;
+}
+
+.newsletter input {
+    padding: 1rem;
+    border: 1px solid var(--dark-color);
+    border-radius: 0.3rem;
+    width: calc(100% - 6rem);
+    margin-right: 1rem;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer .copyright img {
+    margin-top: 1rem;
+    max-width: 100%;
+}
